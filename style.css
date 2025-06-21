@@ -7,12 +7,38 @@ body {
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 20px;
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-h1, h2, h3 {
+header {
+    background: #7d9394;
+    color: black;
+    padding: 20px;
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color:#7d9394;
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    font-family: 'Press start 2P', system-ui;
+    color: black;
+    font-size: 15px;
+    transition: 0.2s;
+}
+.main-nav a:hover {
+    color:white;
+}
+
+h1, h2, h3 { 
     margin: 10px 0;
 }
 
@@ -43,4 +69,68 @@ footer a {
 footer a:hover {
     color: #005582;       
     text-decoration: underline;  
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    font-family: "Rubik Mono One", monospace;
+    color:black;
+    background-color: #7d9394;
+    border: 5px solid grey;
+}
+
+.contact-section h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    gap: 15px;
+
+}
+
+.contact-form label {
+    font-size: 15px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.contact-form label[for="name"] {
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.contact-form label[for="message"] {
+   font-weight: bold;
+   font-size: 22px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 90%;
+    display: flex;
+    padding: 15px;
+    margin-bottom: 40px;
+    font-family: "Rubik Mono One", monospace;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid black;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #496264;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.contact-form button:hover {
+    background-color: #617d7e;
+    color:black;
+}
+
+.project-nav{
+    text-decoration: none;
+    padding: auto;
+
 }
